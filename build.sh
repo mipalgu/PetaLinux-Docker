@@ -11,6 +11,6 @@
 ##
 
 docker build \
-    --tag keitetsu/petalinux:ubuntu18.04-base \
+    --tag rhx/petalinux:ubuntu20.04-base \
     .
 

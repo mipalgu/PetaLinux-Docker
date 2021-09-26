@@ -37,4 +37,4 @@ docker run \
     --env HOST_GID=$(id -g ${USER}) \
     --volume /tmp/.X11-unix:/tmp/.X11-unix:rw \
     --volume $DATADIR:/data \
-    keitetsu/petalinux:ubuntu18.04-base
+    rhx/petalinux:ubuntu20.04-base
