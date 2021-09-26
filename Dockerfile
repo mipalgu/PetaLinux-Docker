@@ -8,9 +8,9 @@
 ##              This software is released under the MIT License.
 ##
 
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
-LABEL maintainer="KeitetsuWorks@users.noreply.github.com"
+LABEL maintainer="rhx@users.noreply.github.com"
 
 ##
 ## install PetaLinux dependencies
