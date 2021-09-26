@@ -33,7 +33,7 @@ docker run \
     --env QT_X11_NO_MITSHM=1 \
     --env HOST_USER=user \
     --env HOST_UID=$(id -u ${USER}) \
-    --env HOST_GROUP=${USER} \
+    --env HOST_GROUP=dialout \
     --env HOST_GID=$(id -g ${USER}) \
     --volume /tmp/.X11-unix:/tmp/.X11-unix:rw \
     --volume $DATADIR:/data \

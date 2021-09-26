@@ -115,6 +115,11 @@ RUN chmod +x /usr/local/bin/init_petalinux.sh && \
 RUN mkdir -p /opt/Xilinx/PetaLinux
 
 ##
+## Avoid requiring a password on sudo
+##
+RUN echo '%sudo ALL=(ALL:ALL) NOPASSWD:ALL' > /etc/sudoers.d/nopasswd
+
+##
 ## ENTRYPOINT settings
 ##
 COPY files/entrypoint.sh /usr/local/bin/entrypoint.sh
